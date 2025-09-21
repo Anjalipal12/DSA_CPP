@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/dsa_c++/1.Arrays_questions",
-      "program": "e:/dsa_c++/1.Arrays_questions/build/Debug/outDebug",
+      "cwd": "e:/dsa_c++/3.Sorting_and_Searching_questions",
+      "program": "e:/dsa_c++/3.Sorting_and_Searching_questions/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
