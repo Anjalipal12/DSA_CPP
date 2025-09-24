@@ -9,7 +9,7 @@ void tolower(char word[] , int n){
         if(ch>='a' && ch<='z'){
             continue;
         }else{
-            word[i] = ch - 'a';
+            word[i] = ch - 'A' + 'a';
         }
     }
 }
