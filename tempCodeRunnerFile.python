@@ -1,0 +1,6 @@
+
+x1 = int(input("Enter your first input :"))
+x2 = int(input("Enter your second input :"))
+num = x1.intersection(x2)
+print(num)
+
