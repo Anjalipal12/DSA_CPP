@@ -1,19 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int largest(int arr[] , int n){
-    int max = arr[0];
-    for(int i = 0 ; i<n ; i++){
-        if(arr[i] > max){
-            max = arr[i];
+vector<int>seive(int n){
+    vector<int>arr(n+1,0);
+
+    for(int i = 2; i*i<=n ; i++){
+        if(arr[i] == 1){
+            for(int j = i*i ; j<=n ; j++){
+                arr[j] = 0;
+            }
         }
-        return max;
     }
+    vector<int>ans;
+    for(int i = 2; i<=n; i++){
+        if(arr[i] == 1){
+            ans.push_back(i);
+        }
+    }
+    return ans;
 }
 int main(){
-    int arr[] = {4,3,2,10};
-    int n = sizeof(arr)/sizeof(int);
+    int n; cin>>n;
 
-    cout<<largest(arr,n)<<endl;
+    vector<int>ans = seive(n);
+    for(int x: ans){
+        cout<<x<<" ";
+    }
     return 0;
 }
